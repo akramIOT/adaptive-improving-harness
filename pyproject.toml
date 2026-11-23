@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "adaptive-improving-harness"
+version = "0.2.0"
+description = "Adaptive improving harness: guarded decision reuse and recursive self-improvement, with actor weights held fixed"
+readme = "README.md"
+requires-python = ">=3.10,<3.15"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{name = "Yuhua Jiang"}]
+dependencies = []
+keywords = ["agents", "harness", "decision-reuse", "token-efficiency", "recursive-self-improvement"]
+
+[project.urls]
+Repository = "https://github.com/YuhuaJiang2002/HarnessMM"
+Issues = "https://github.com/YuhuaJiang2002/HarnessMM/issues"
+
+[project.optional-dependencies]
+dev = ["pytest==8.3.5", "jsonschema==4.26.0", "build>=1.2,<2"]
+analysis = ["numpy>=2,<3"]
+
+[tool.setuptools.packages.find]
+include = ["adaptive_harness*", "phiagent", "integrations*", "scripts*"]
+exclude = ["tests*", "examples*", "docs*"]
+namespaces = true
+
+[tool.setuptools.package-data]
+"integrations.deepseek_harness" = ["*.mjs"]
+"integrations" = ["README.md"]
+"integrations.codex_harness" = ["README.md"]
+"integrations.baseline_harness" = ["README.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

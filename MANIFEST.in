@@ -1,0 +1,17 @@
+include REPRODUCE.md LICENSE NOTICE SOURCE_MANIFEST.json package.json
+recursive-include docs *.md *.png *.svg *.gif *.json *.py
+recursive-include examples *.py *.mjs
+recursive-include tests *.py *.mjs
+recursive-include configs *.json
+recursive-include integrations *.mjs
+recursive-include integrations *.md
+recursive-include reproduction *.py *.mjs *.json *.md
+recursive-include dsh-plugin/desktop *.js *.mjs *.json *.md *.yml
+recursive-include pi-extension *.ts *.mjs *.json *.md
+recursive-include robotics *.py *.json *.jsonl *.md *.png *.gif
+prune dsh-plugin/desktop/node_modules
+prune pi-extension/node_modules
+prune .venv
+prune outputs
+prune artifacts
+prune external

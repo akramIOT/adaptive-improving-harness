@@ -1,0 +1,453 @@
+{
+  "mbpp_ablation_test": [
+    {
+      "certified_substitutions": 407,
+      "configuration": "Full HarnessMM-V",
+      "execution_tokens": 3385856,
+      "saving_vs_full_percent": "0.00",
+      "successes": 241
+    },
+    {
+      "certified_substitutions": 212,
+      "configuration": "Single-use EDG",
+      "execution_tokens": 4632751,
+      "saving_vs_full_percent": "26.91",
+      "successes": 239
+    },
+    {
+      "certified_substitutions": 0,
+      "configuration": "Callback retained",
+      "execution_tokens": 4206999,
+      "saving_vs_full_percent": "19.52",
+      "successes": 240
+    },
+    {
+      "certified_substitutions": 0,
+      "configuration": "EDG execution disabled",
+      "execution_tokens": 4160559,
+      "saving_vs_full_percent": "18.62",
+      "successes": 245
+    }
+  ],
+  "mbpp_sanitized_test": [
+    {
+      "arm": "Native",
+      "certified_substitutions": 0,
+      "input_tokens": 12953280,
+      "output_tokens": 920816,
+      "provider_attempts": 1633,
+      "saving_vs_native_percent": "0.00",
+      "success_percent": "90.27",
+      "successes": 232,
+      "tokens_per_task_k": "53.98",
+      "total_tokens": 13874096
+    },
+    {
+      "arm": "CoT-only",
+      "certified_substitutions": 0,
+      "input_tokens": 2879732,
+      "output_tokens": 985996,
+      "provider_attempts": 1690,
+      "saving_vs_native_percent": "72.14",
+      "success_percent": "93.39",
+      "successes": 240,
+      "tokens_per_task_k": "15.04",
+      "total_tokens": 3865728
+    },
+    {
+      "arm": "HarnessMM",
+      "certified_substitutions": 472,
+      "input_tokens": 1757389,
+      "output_tokens": 969349,
+      "provider_attempts": 1088,
+      "saving_vs_native_percent": "80.35",
+      "success_percent": "91.83",
+      "successes": 236,
+      "tokens_per_task_k": "10.61",
+      "total_tokens": 2726738
+    }
+  ],
+  "miniwob_test": [
+    {
+      "execution_tokens": 542341,
+      "method": "baseline harness",
+      "saving_vs_harnessmm_v_percent": "29.56",
+      "success_percent": "60.42",
+      "successes": 58,
+      "tokens_per_task_k": "5.65"
+    },
+    {
+      "execution_tokens": 765253,
+      "method": "SkillOpt",
+      "saving_vs_harnessmm_v_percent": "50.08",
+      "success_percent": "64.58",
+      "successes": 62,
+      "tokens_per_task_k": "7.97"
+    },
+    {
+      "execution_tokens": 755339,
+      "method": "AutoSaddler",
+      "saving_vs_harnessmm_v_percent": "49.43",
+      "success_percent": "60.42",
+      "successes": 58,
+      "tokens_per_task_k": "7.87"
+    },
+    {
+      "execution_tokens": 2564789,
+      "method": "SoL-Pi",
+      "saving_vs_harnessmm_v_percent": "85.11",
+      "success_percent": "63.54",
+      "successes": 61,
+      "tokens_per_task_k": "26.72"
+    },
+    {
+      "execution_tokens": 423501,
+      "method": "Prompt Compaction",
+      "saving_vs_harnessmm_v_percent": "9.80",
+      "success_percent": "65.63",
+      "successes": 63,
+      "tokens_per_task_k": "4.41"
+    },
+    {
+      "execution_tokens": 1923265,
+      "method": "DeepSeek Harness",
+      "saving_vs_harnessmm_v_percent": "80.14",
+      "success_percent": "61.46",
+      "successes": 59,
+      "tokens_per_task_k": "20.03"
+    },
+    {
+      "execution_tokens": 3795154,
+      "method": "Codex Harness",
+      "saving_vs_harnessmm_v_percent": "89.93",
+      "success_percent": "63.54",
+      "successes": 61,
+      "tokens_per_task_k": "39.53"
+    },
+    {
+      "execution_tokens": 492182,
+      "method": "RHO",
+      "saving_vs_harnessmm_v_percent": "22.39",
+      "success_percent": "60.42",
+      "successes": 58,
+      "tokens_per_task_k": "5.13"
+    },
+    {
+      "execution_tokens": 962464,
+      "method": "HarnessPro",
+      "saving_vs_harnessmm_v_percent": "60.31",
+      "success_percent": "61.46",
+      "successes": 59,
+      "tokens_per_task_k": "10.03"
+    },
+    {
+      "execution_tokens": 382005,
+      "method": "HarnessMM-V",
+      "saving_vs_harnessmm_v_percent": "0.00",
+      "success_percent": "64.58",
+      "successes": 62,
+      "tokens_per_task_k": "3.98"
+    }
+  ],
+  "occupied_pad": [
+    {
+      "actor_tokens": 54420,
+      "attempts": 104,
+      "control_ticks": 928,
+      "decisions": 100,
+      "episodes": 10,
+      "population": "original",
+      "split": "all",
+      "successes": 2,
+      "tokens_per_task_k": "5.44",
+      "version": "before",
+      "zero_motion_attempts": 88
+    },
+    {
+      "actor_tokens": 15676,
+      "attempts": 46,
+      "control_ticks": 2320,
+      "decisions": 26,
+      "episodes": 10,
+      "population": "original",
+      "split": "all",
+      "successes": 10,
+      "tokens_per_task_k": "1.57",
+      "version": "after",
+      "zero_motion_attempts": 6
+    },
+    {
+      "actor_tokens": 13072,
+      "attempts": 24,
+      "control_ticks": 116,
+      "decisions": 24,
+      "episodes": 2,
+      "population": "original",
+      "split": "train",
+      "successes": 0,
+      "tokens_per_task_k": "6.54",
+      "version": "before",
+      "zero_motion_attempts": 22
+    },
+    {
+      "actor_tokens": 3622,
+      "attempts": 10,
+      "control_ticks": 464,
+      "decisions": 6,
+      "episodes": 2,
+      "population": "original",
+      "split": "train",
+      "successes": 2,
+      "tokens_per_task_k": "1.81",
+      "version": "after",
+      "zero_motion_attempts": 2
+    },
+    {
+      "actor_tokens": 13077,
+      "attempts": 24,
+      "control_ticks": 116,
+      "decisions": 24,
+      "episodes": 2,
+      "population": "original",
+      "split": "validation",
+      "successes": 0,
+      "tokens_per_task_k": "6.54",
+      "version": "before",
+      "zero_motion_attempts": 22
+    },
+    {
+      "actor_tokens": 3623,
+      "attempts": 10,
+      "control_ticks": 464,
+      "decisions": 6,
+      "episodes": 2,
+      "population": "original",
+      "split": "validation",
+      "successes": 2,
+      "tokens_per_task_k": "1.81",
+      "version": "after",
+      "zero_motion_attempts": 2
+    },
+    {
+      "actor_tokens": 28271,
+      "attempts": 56,
+      "control_ticks": 696,
+      "decisions": 52,
+      "episodes": 6,
+      "population": "original",
+      "split": "test",
+      "successes": 2,
+      "tokens_per_task_k": "4.71",
+      "version": "before",
+      "zero_motion_attempts": 44
+    },
+    {
+      "actor_tokens": 8431,
+      "attempts": 26,
+      "control_ticks": 1392,
+      "decisions": 14,
+      "episodes": 6,
+      "population": "original",
+      "split": "test",
+      "successes": 6,
+      "tokens_per_task_k": "1.41",
+      "version": "after",
+      "zero_motion_attempts": 2
+    },
+    {
+      "actor_tokens": 141689,
+      "attempts": 282,
+      "control_ticks": 3596,
+      "decisions": 262,
+      "episodes": 30,
+      "population": "fresh",
+      "split": "all",
+      "successes": 10,
+      "tokens_per_task_k": "4.72",
+      "version": "before",
+      "zero_motion_attempts": 220
+    },
+    {
+      "actor_tokens": 44115,
+      "attempts": 133,
+      "control_ticks": 6960,
+      "decisions": 73,
+      "episodes": 30,
+      "population": "fresh",
+      "split": "all",
+      "successes": 30,
+      "tokens_per_task_k": "1.47",
+      "version": "after",
+      "zero_motion_attempts": 13
+    },
+    {
+      "actor_tokens": 17219,
+      "attempts": 40,
+      "control_ticks": 1044,
+      "decisions": 32,
+      "episodes": 6,
+      "population": "fresh",
+      "split": "train",
+      "successes": 4,
+      "tokens_per_task_k": "2.87",
+      "version": "before",
+      "zero_motion_attempts": 22
+    },
+    {
+      "actor_tokens": 7830,
+      "attempts": 25,
+      "control_ticks": 1392,
+      "decisions": 13,
+      "episodes": 6,
+      "population": "fresh",
+      "split": "train",
+      "successes": 6,
+      "tokens_per_task_k": "1.31",
+      "version": "after",
+      "zero_motion_attempts": 1
+    },
+    {
+      "actor_tokens": 23581,
+      "attempts": 50,
+      "control_ticks": 986,
+      "decisions": 44,
+      "episodes": 6,
+      "population": "fresh",
+      "split": "validation",
+      "successes": 3,
+      "tokens_per_task_k": "3.93",
+      "version": "before",
+      "zero_motion_attempts": 33
+    },
+    {
+      "actor_tokens": 7828,
+      "attempts": 25,
+      "control_ticks": 1392,
+      "decisions": 13,
+      "episodes": 6,
+      "population": "fresh",
+      "split": "validation",
+      "successes": 6,
+      "tokens_per_task_k": "1.30",
+      "version": "after",
+      "zero_motion_attempts": 1
+    },
+    {
+      "actor_tokens": 100889,
+      "attempts": 192,
+      "control_ticks": 1566,
+      "decisions": 186,
+      "episodes": 18,
+      "population": "fresh",
+      "split": "test",
+      "successes": 3,
+      "tokens_per_task_k": "5.60",
+      "version": "before",
+      "zero_motion_attempts": 165
+    },
+    {
+      "actor_tokens": 28457,
+      "attempts": 83,
+      "control_ticks": 4176,
+      "decisions": 47,
+      "episodes": 18,
+      "population": "fresh",
+      "split": "test",
+      "successes": 18,
+      "tokens_per_task_k": "1.58",
+      "version": "after",
+      "zero_motion_attempts": 11
+    }
+  ],
+  "scope": "Integer totals already stored in this repository. Two-decimal metrics use round-half-up. No new measurement.",
+  "tabletop_30": {
+    "by_split_and_scene": [
+      {
+        "control_ticks": 696,
+        "decisions": 52,
+        "episodes": 6,
+        "scene": "clear-and-refill",
+        "split": "test",
+        "steps": 56,
+        "successes": 2
+      },
+      {
+        "control_ticks": 2784,
+        "decisions": 24,
+        "episodes": 6,
+        "scene": "sort-three",
+        "split": "test",
+        "steps": 48,
+        "successes": 5
+      },
+      {
+        "control_ticks": 1450,
+        "decisions": 20,
+        "episodes": 6,
+        "scene": "sort-two",
+        "split": "test",
+        "steps": 32,
+        "successes": 5
+      },
+      {
+        "control_ticks": 116,
+        "decisions": 24,
+        "episodes": 2,
+        "scene": "clear-and-refill",
+        "split": "train",
+        "steps": 24,
+        "successes": 0
+      },
+      {
+        "control_ticks": 696,
+        "decisions": 6,
+        "episodes": 2,
+        "scene": "sort-three",
+        "split": "train",
+        "steps": 12,
+        "successes": 2
+      },
+      {
+        "control_ticks": 464,
+        "decisions": 4,
+        "episodes": 2,
+        "scene": "sort-two",
+        "split": "train",
+        "steps": 8,
+        "successes": 2
+      },
+      {
+        "control_ticks": 116,
+        "decisions": 24,
+        "episodes": 2,
+        "scene": "clear-and-refill",
+        "split": "validation",
+        "steps": 24,
+        "successes": 0
+      },
+      {
+        "control_ticks": 696,
+        "decisions": 6,
+        "episodes": 2,
+        "scene": "sort-three",
+        "split": "validation",
+        "steps": 12,
+        "successes": 2
+      },
+      {
+        "control_ticks": 464,
+        "decisions": 4,
+        "episodes": 2,
+        "scene": "sort-two",
+        "split": "validation",
+        "steps": 8,
+        "successes": 2
+      }
+    ],
+    "control_ticks": 7482,
+    "decisions": 164,
+    "episodes": 30,
+    "steps": 224,
+    "successes": 20
+  }
+}

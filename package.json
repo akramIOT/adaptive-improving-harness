@@ -1,0 +1,15 @@
+{
+  "name": "adaptive-improving-harness",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Adaptive improving harness: native action graph controllers and contract tests",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "demo": "node examples/guarded_reuse.mjs"
+  }
+}

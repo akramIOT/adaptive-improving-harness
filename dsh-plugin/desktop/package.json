@@ -1,0 +1,50 @@
+{
+  "name": "dsh-adaptive-harness",
+  "version": "0.1.0",
+  "description": "Adaptive improving harness for the DeepSeek Harness desktop app: guarded decision reuse over the native tool surface.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "lib",
+    "locale",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh-CN.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.4",
+    "@deepseek-ai/dsh-llm": "^0.1.0-rc.6 || ^0.2.1-rc.2 || ^0.2.1-rc.3 || ^0.2.1-rc.4 || ^0.2.1-rc.5 || ^0.2.2-alpha.2",
+    "@deepseek-ai/schemastery": "^3.18.4"
+  },
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.2.1-rc.5"
+    },
+    "category": "tools",
+    "displayName": "Adaptive Harness",
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "compatibility": {
+      "dsh": "^0.2.1-rc.5 || ^0.2.2-alpha.2",
+      "dshReleases": {
+        "0.2.1-rc.5": "compatible",
+        "0.2.2-alpha.2": "compatible"
+      },
+      "profiles": [
+        "headless",
+        "web",
+        "desktop"
+      ]
+    }
+  }
+}
