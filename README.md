@@ -11,7 +11,7 @@
 
 [Run the guarded-reuse example](examples/guarded_reuse.mjs) · [See the coding results](#codex-and-deepseek-coding-harnesses) · [Reuse a weight program](examples/weight_space_reuse.py) · [Try the pi extension](pi-extension/)
 
-This repository is the adaptive improving harness for the MIT weight-space programming program. Weight-space programming writes a target network by hand. This harness changes the procedure that calls tools: it stores decisions, checks receipts, substitutes native callbacks, and freezes companion configuration before test. The actor's weights are not an optimization variable.
+This repository is the adaptive improving harness for the MIT weight-space programming program. Weight-space programming writes a target network by hand. The neighboring weight editor is [AgenticWeightInfra](https://github.com/akramIOT/AgenticWeightInfra). This harness changes the procedure that calls tools: it stores decisions, checks receipts, substitutes native callbacks, and freezes companion configuration before test. The actor's weights are not an optimization variable.
 
 The measured results below are from that procedure, published as HarnessMM and the November 20, 2026 HarnessMM-V manuscript. The Python package in this checkout is `adaptive_harness`.
 

@@ -8,7 +8,7 @@ The neighboring projects edit a target network directly.
 
 | Project | What changes |
 | --- | --- |
-| AgenticWeightInfra | A browser agent rewrites cached weights with a small weight language, then probes the edited model |
+| [AgenticWeightInfra](https://github.com/akramIOT/AgenticWeightInfra) | A browser agent rewrites cached weights with a small weight language, then probes the edited model |
 | weight-space-programming-autoresearch | A coding agent hand-writes interpretable features and transformer weights. Training is not the search procedure |
 | adaptive-improving-harness | The actor's weights stay fixed. The harness stores decisions, checks receipts, substitutes native callbacks, and freezes a companion configuration before test |
 
